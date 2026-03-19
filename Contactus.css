@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    background-image:url(img/contact\ us\ bg.jpeg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px 8%;
+}
+
+.container2{
+    display: flex;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+  color: blue;
+}
+
+.contact-section{
+    position:relative;
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.contact-info{
+    width:45%;
+    color: white;
+    padding-left: 200px;
+}
+
+.contact-info h1{
+    margin-bottom:10px;
+}
+
+.contact-info p{
+    margin-bottom:20px;
+}
+
+.info-box{
+    margin-bottom:20px;
+}
+
+
+.contact-form{
+    width:40%;
+    background:teal;
+    padding:40px;
+    border-radius:8px;
+    color:black;
+}
+
+.contact-form h2{
+    margin-bottom:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    margin-bottom:20px;
+    padding:10px;
+    border:none;
+    border-bottom:1px solid gray;
+    outline:none;
+}
+
+.contact-form textarea{
+    resize:none;
+    height:80px;
+}
+
+.contact-form button{
+    background:#00bcd4;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    cursor:pointer;
+}
+
+.contact-form button:hover{
+    background:#0097a7;
+}
+.footer {
+    background-color: teal; 
+    color: white;
+    text-align: center;
+    padding: 15px 10px; 
+    height: 140px;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    
+    .container {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .container2 {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .contact-section{
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .contact-info {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .contact-info h1{
+        font-size: 28px;
+    }
+
+     .contact-form input,
+.contact-form textarea{
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+    }
+
+}
