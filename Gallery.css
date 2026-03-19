@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgb(9,0,77,0.65), rgb(9,0,77,0.65)),url(img/gallary\ banner\ real\ one.webp);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+  color: blue;
+}
+
+.Section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    min-height: 100vh;
+}
+.Section section{
+    text-align: center;
+    background: teal;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+.Section section:hover{
+    transform: translateY(-10px);
+}
+
+.Section img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.footer {
+    background-color: teal; 
+    color: white;
+    text-align: center;
+    padding: 15px 10px; 
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: 0.3s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
